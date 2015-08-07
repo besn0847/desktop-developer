@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=SpringSource ToolSuite
+Exec=/home/default/sts-3.7.0.RELEASE/STS
+Icon=/home/default/sts-3.7.0.RELEASE/icon.xpm
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;GNOME;Development;WebDevelopment;
