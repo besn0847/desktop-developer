@@ -24,12 +24,14 @@ RUN cd /root \
 RUN cd /root \ 
 	&& curl -O -L http://dist.springsource.com/release/STS/3.7.0.RELEASE/dist/e4.5/spring-tool-suite-3.7.0.RELEASE-e4.5-linux-gtk-x86_64.tar.gz \
 	&& tar xvfz spring-tool-suite-3.7.0.RELEASE-e4.5-linux-gtk-x86_64.tar.gz \
+	&& mkdir -p /home/default
 	&& mv sts-bundle/sts-3.7.0.RELEASE /home/default \
 	&& chmod -R og+rw /home/default/sts-3.7.0.RELEASE \
 	&& rm -f /root/spring-tool-suite-3.7.0.RELEASE-e4.5-linux-gtk-x86_64.tar.gz \
 	&& rm -rf /root/sts-bundle
 
 ADD springsource-toolsuite.desktop /usr/share/applications/
+ADD startup.sh /
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
