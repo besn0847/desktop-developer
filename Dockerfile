@@ -1,4 +1,4 @@
-FROM besn0847/desktop-mini:1.0
+FROM besn0847/desktop-light:1.0
 MAINTAINER Franck Besnard <franck@besnard.mobi>
 
 ENV DEBIAN_FRONTEND noninteractive
