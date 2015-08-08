@@ -33,6 +33,8 @@ RUN cd /root \
 ADD springsource-toolsuite.desktop /usr/share/applications/
 ADD startup.sh /
 
+RUN chmod +x /startup.sh
+
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 EXPOSE 5900
