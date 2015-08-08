@@ -6,7 +6,7 @@ ENV HOME /root
 
 RUN apt-get update \
         && apt-get install -y --force-yes --no-install-recommends \
-                curl git bluefish software-properties-common lame libwebkitgtk-1.0-0 \
+                curl git bluefish firefox software-properties-common lame libwebkitgtk-1.0-0 \
 	&& echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \
 	&& add-apt-repository -y ppa:webupd8team/java \
 	&& apt-get update \
